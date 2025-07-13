@@ -1,11 +1,17 @@
-import Button from "./components/Button";
 import Stilos from "./page.module.css";
+import Productos from "./components/Productos";
+import Nuevos from "./components/ProductoList";
 
 export default function paginaPrincipal() {
     return (
-        <div className={Stilos.Button}>
-            <h1>Prueba del botton</h1>
-            <Button />
+        <div className={Stilos.main}>
+            <div className={Stilos.Button}>
+                <div className={Stilos.contenedor}>
+                <Productos />
+                </div>
+            </div>
+            <Nuevos />
+            <a href="../../../">ATRAS</a>
         </div>
     )
 }

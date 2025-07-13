@@ -1,11 +1,22 @@
-.Button{
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
 }
 .register{
-    width: 500px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     border-radius: 3px;
     font-size: 20px;
     background-color: #d08ee2;
@@ -19,4 +30,47 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 12px #d08ee2;
     background: #d08ee2;
+}
+.productCard{
+    background-color: grey;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    gap: 10px;
+    height: 250px;
+}
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #55026c;
+}
+.nuevosP{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+.contenedorP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.mostrarP{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #d08ee2;
+    border: none;
+    color: #55026c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
